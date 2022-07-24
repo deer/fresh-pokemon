@@ -1,11 +1,4 @@
-# fresh project
-
-### Usage
-
-Start the project:
-
-```
-deno task start
-```
-
-This will watch the project directory and restart as necessary.
+from the following tutorial:
+https://www.youtube.com/watch?v=Q4dos7-gX68
+associated repo:
+https://github.com/jherr/fresh-pokemon
