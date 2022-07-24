@@ -4,6 +4,7 @@ import { tw } from "@twind";
 
 import { Pokemon } from "../utils/types.ts";
 import {DB, TOKEN } from "../utils/env.ts";
+import AddToList from "../islands/AddToList.tsx";
 
 export default function PokemonCard({
   pokemon,
@@ -20,6 +21,11 @@ export default function PokemonCard({
         <a class={tw`underline flex-grow`} href={`/pokemon/${pokemon.id}`}>
           View Details...
         </a>
+        {allowAdd && (
+          <div class={tw`flex-end`}>
+            <AddToList pokemon={pokemon} />
+          </div>
+        )}
       </div>
     </div>
   );
